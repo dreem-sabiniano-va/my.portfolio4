@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dreem Sabiniano | Administrative &amp; Operations VA</title>
+  <meta name="description" content="Dreem Sabiniano, a Manila-based Administrative &amp; Operations VA for admin, procurement, calendar and documentation support.">
+  <meta name="theme-color" content="#FFFDF9">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="#home"><span data-sp class="brand-sp"></span><span data-c="name"></span></a>
+    <button id="navToggle" class="menu-btn" aria-expanded="false" aria-controls="nav" aria-label="Open menu"><span></span><span></span><span></span></button>
+    <nav id="nav" aria-label="Primary"></nav>
+  </div>
+</header>
+
+<main id="main">
+  <section id="home" class="hero">
+    <span data-sp class="spark s1"></span><span data-sp class="spark s2"></span><span data-sp class="spark s3"></span>
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="pill pill-hi" data-c="hero.pill"></p>
+        <h1 data-c="hero.headline"></h1>
+        <p class="lead" data-c="hero.description"></p>
+        <ul class="chip-row" id="heroChips" aria-label="Problems I solve"></ul>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#projects" data-c="hero.primaryCta"></a>
+          <a class="btn btn-secondary" data-href="links.calendly" data-c="hero.secondaryCta"></a>
+        </div>
+        <p class="badge" id="availBadge"><span class="dot" aria-hidden="true"></span><span id="availText"></span></p>
+      </div>
+      <figure class="portrait-wrap">
+        <span data-flower class="flower"></span>
+        <div class="portrait-back" aria-hidden="true"></div>
+        <div class="portrait" id="parallax"><img id="heroImg" width="440" height="440" alt=""></div>
+        <figcaption class="pill" data-c="hero.caption"></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="facts" aria-label="Quick facts"><div class="wrap" id="facts"></div></section>
+
+  <div class="divider" aria-hidden="true"></div>
+  <section id="services" class="section">
+    <div class="wrap">
+      <header class="head reveal"><h2 data-c="services.title"></h2><p data-c="services.intro"></p></header>
+      <ul class="grid grid-3" id="serviceGrid"></ul>
+    </div>
+  </section>
+
+  <section id="about" class="section about-section tint">
+    <div class="wrap about-grid">
+      <p class="eyebrow">A LITTLE ABOUT ME</p>
+      <h2 data-c="about"></h2>
+      <a class="btn btn-secondary" href="#projects">See how I organize the details</a>
+    </div>
+  </section>
+
+  <section id="test" class="section tint">
+    <div class="wrap">
+      <header class="head reveal"><h2 data-c="test.title"></h2><p data-c="test.intro"></p></header>
+      <div class="test reveal">
+        <ul class="picks" id="testList"></ul>
+        <aside class="result" aria-label="Your result">
+          <div id="testResult" aria-live="polite" aria-atomic="true"></div>
+          <div class="result-actions">
+            <a class="btn btn-primary" id="testCta" href="#test"></a>
+            <button type="button" class="btn btn-secondary" id="testReset"></button>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider" aria-hidden="true"></div>
+  <section id="how" class="section">
+    <div class="wrap">
+      <header class="head reveal"><h2 data-c="how.title"></h2></header>
+      <ol class="steps" id="steps"></ol>
+    </div>
+  </section>
+
+  <section id="tools" class="section tint">
+    <div class="wrap">
+      <header class="head reveal"><h2 data-c="tools.title"></h2><p data-c="tools.intro"></p></header>
+      <div class="marquee" id="marquee" aria-hidden="true"></div>
+      <ul class="grid grid-tools" id="toolGrid"></ul>
+    </div>
+  </section>
+
+  <div class="divider" aria-hidden="true"></div>
+  <section id="projects" class="section">
+    <div class="wrap">
+      <header class="head reveal"><h2 data-c="projects.title"></h2><p data-c="projects.intro"></p></header>
+      <ul class="grid grid-proj" id="projectGrid"></ul>
+    </div>
+  </section>
+
+  <div class="divider" aria-hidden="true"></div>
+  <section id="faq" class="section">
+    <div class="wrap narrow">
+      <header class="head reveal"><h2 data-c="faq.title"></h2></header>
+      <div id="faqList"></div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <div class="wrap">
+      <div class="contact-card reveal">
+        <span data-sp class="spark s4"></span>
+        <h2 data-c="contact.title"></h2>
+        <p data-c="contact.intro"></p>
+        <p class="badge" id="availBadge2"><span class="dot" aria-hidden="true"></span><span id="availText2"></span></p>
+        <div class="cta-row center">
+          <a class="btn btn-primary" data-href="links.calendly" data-c="hero.secondaryCta"></a>
+          <button type="button" class="btn btn-secondary" id="copyEmail"></button>
+        </div>
+        <p class="sr-only" id="copyStatus" role="status"></p>
+        <ul class="chip-row center">
+          <li><a class="chip link" id="emailLink" target="_blank" rel="noopener"></a></li>
+          <li><a class="chip link" id="liLink" target="_blank" rel="noopener"></a></li>
+          <li><a class="chip link" id="ojLink" target="_blank" rel="noopener"></a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer"><div class="wrap"><p data-c="footer"></p></div></footer>
+
+<a class="sticky-cta btn btn-primary" id="stickyCta" data-href="links.calendly" data-c="hero.secondaryCta"></a>
+
+<script src="content.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
